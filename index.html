@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet" />
+    <title>Book App</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div id="page-banner">
+                <h1 class="title">Book Application</h1>
+                <p>Books below are available</p>
+                <form id="search-books">
+                    <input type="text" placeholder="Search books..." />
+                </form>
+            </div>
+        </header>
+        <div id="book-list">
+            <h2 class="title">Books to Read</h2>
+            <ul>
+                <li>
+                    <span class="name">PHP for Dummies</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <span class="name">Oracle 2</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <span class="name">Basic HTML & CSS</span>
+                    <span class="delete">delete</span>
+                </li>
+                <li>
+                    <span class="name">Object Oriented Programming</span>
+                    <span class="delete">delete</span>
+                </li>
+            </ul>
+        </div>
+        <form id="add-book">
+
+            <input type="checkbox" id="hide">
+            <label for="hide">Hide all Books</label>
+
+            <input type="text" placeholder="Add a book..." />
+            <button>Add</button>
+        </form>
+
+  <!--This is the new content-->
+
+        <div id="tabbed-content">
+            <ul class="tabs">
+                <li data-owndata="#about" class="active">About</li>
+                <li data-owndata="#contact">Contact</li>
+            </ul>
+            <div class="panel active" id="about">
+                <p>Content for <b>ABOUT</b> tab...</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+            <div class="panel" id="contact">
+                <p>Content for <b>Contact</b> tab...</p>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
+            </div>
+        </div>
+        
+        
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+
+</html>
